@@ -1,11 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Microsoft.Azure.Devices;
-
-namespace ConsoleSample
+﻿
+namespace DotNetCoreConsoleSample
 {
     class Program
     {
@@ -14,7 +8,7 @@ namespace ConsoleSample
 
         const string primaryThumbprint = "<replace_with_certificate_thumbprint>";
         const string secondaryThumbprint = "<replace_with_certificate_thumbprint>";
-
+        
         static void Main(string[] args)
         {
             AddDeviceAsync().Wait();
@@ -42,7 +36,7 @@ namespace ConsoleSample
                 {
                     Console.WriteLine($"{ex}");
                 }
-               
+
             }
 
         }
