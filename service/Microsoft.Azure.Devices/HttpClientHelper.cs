@@ -495,18 +495,8 @@ namespace Microsoft.Azure.Devices
                         }
                         else
                         {
-<<<<<<< HEAD
-<<<<<<< HEAD
                             var str = Newtonsoft.Json.JsonConvert.SerializeObject(entity);
                             requestMsg.Content = new StringContent(str, System.Text.Encoding.UTF8, "application/json");
-=======
-                            var jsonString = JsonConvert.SerializeObject(entity);
-                            requestMsg.Content = new StringContent(jsonString);
->>>>>>> d7cf794... Adding work around to support .NetStandard 1.3 for GetNextAsTwinAsync method
-=======
-                            var jsonString = JsonConvert.SerializeObject(entity);
-                            requestMsg.Content = new StringContent(jsonString);
->>>>>>> d7cf79484cf98c53a358075b01e0b3acd0eb096a
                         }
                     }
 
